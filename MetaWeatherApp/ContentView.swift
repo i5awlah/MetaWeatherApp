@@ -11,6 +11,17 @@ struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
+        // test API call
+            .onAppear {
+                WeatherService().getWeatherAPI(
+                    id: "1939753",
+                    onSuccess: {(response) in
+                        print("response: \(response)")
+                    },
+                    onFailure: {(message) in
+                        print("message \(message)")
+                    })
+            }
     }
 }
 
