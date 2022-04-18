@@ -11,7 +11,7 @@ import SwiftUI
 struct MetaWeatherAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(weatherVM: WeatherViewModel())
         }
     }
 }
