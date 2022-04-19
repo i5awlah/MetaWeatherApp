@@ -29,6 +29,7 @@
 		905C0CCB280E3506002FA4ED /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CCA280E3506002FA4ED /* FloatingActionButton.swift */; };
 		905C0CCD280E3CF0002FA4ED /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CCC280E3CF0002FA4ED /* CustomAlert.swift */; };
 		905C0CD0280EF881002FA4ED /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CCF280EF881002FA4ED /* DateFormat.swift */; };
+		905C0CD4280EFDEE002FA4ED /* TemperatureConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CD3280EFDEE002FA4ED /* TemperatureConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		905C0CCA280E3506002FA4ED /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 		905C0CCC280E3CF0002FA4ED /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		905C0CCF280EF881002FA4ED /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		905C0CD3280EFDEE002FA4ED /* TemperatureConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				905C0CCF280EF881002FA4ED /* DateFormat.swift */,
+				905C0CD3280EFDEE002FA4ED /* TemperatureConverter.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				905C0CBE280E004D002FA4ED /* DayListView.swift in Sources */,
 				905C0C91280D1620002FA4ED /* MetaWeatherAppApp.swift in Sources */,
 				905C0CB1280DEF9B002FA4ED /* CityListView.swift in Sources */,
+				905C0CD4280EFDEE002FA4ED /* TemperatureConverter.swift in Sources */,
 				905C0CC9280E052D002FA4ED /* WeatherDetailStack.swift in Sources */,
 				905C0CC3280E035E002FA4ED /* WeatherCityView.swift in Sources */,
 				905C0CC0280E0080002FA4ED /* DayCell.swift in Sources */,

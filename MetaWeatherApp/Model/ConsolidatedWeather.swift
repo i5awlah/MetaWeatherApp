@@ -3,7 +3,8 @@ import Foundation
 struct ConsolidatedWeather: Codable {
     let weatherStateName, weatherStateAbbr, created: String
     let applicableDate: String
-    let minTemp, maxTemp, theTemp, windSpeed: Double
+    var minTemp, maxTemp, theTemp: Double
+    let windSpeed: Double
     let airPressure: Double
     let humidity: Int
 
