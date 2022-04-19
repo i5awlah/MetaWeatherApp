@@ -11,24 +11,15 @@ struct CityListView: View {
     @State var allWeathers: [Weather]
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                BackgroundView()
                 VStack {
-                    List {
-                        ForEach(0 ..< 3) { index in
+                    List (0 ..< allWeathers.count) { index in
                             NavigationLink(destination: DayListView(weather: allWeathers[index])) {
                                 CityCell(weather: allWeathers[index])
                             }
-                        }
-                        
                     }
                     .navigationBarTitle(Text("Cities"))
                 }
-            }
-        }.accentColor(Color(.label))
-        .onAppear { UITableView.appearance().backgroundColor = UIColor.clear
-        }
+        
     }
 }
 

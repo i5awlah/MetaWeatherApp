@@ -19,6 +19,9 @@ struct HomeView: View {
             
             if $weatherVM.isVisible.wrappedValue {
                 ZStack {
+                    NavigationView {
+                        ZStack {
+                            BackgroundView()
                     CityListView(allWeathers: weatherVM.allWeathers)
                     // FAB for adding new city
                     FloatingActionButton(action: {
@@ -27,7 +30,9 @@ struct HomeView: View {
                         self.text = ""
                         self.isPresented = true
                     }, imageName: "plus", color: Color.purple)
-                    
+                        }
+                    }.accentColor(Color(.label))
+                        .onAppear { UITableView.appearance().backgroundColor = UIColor.clear}
                     CustomAlert(title: "Enter WOEID City", isShown: $isPresented, text: $text) { woeid in
                         print("New woeid: \(woeid)")
                         weatherVM.addNewCity(woeid: woeid)
