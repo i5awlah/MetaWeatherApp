@@ -11,8 +11,12 @@ struct DayCell: View {
     @State var weather: ConsolidatedWeather
     var body: some View {
         HStack {
-            Text(weather.applicableDate)
-                .font(.title2)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(DateFormat.format(weather.applicableDate))
+                    .font(.title2)
+                Text(weather.applicableDate)
+                    .font(.title3)
+            }
             
             Spacer()
             
