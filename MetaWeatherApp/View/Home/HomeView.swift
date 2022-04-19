@@ -30,13 +30,14 @@ struct HomeView: View {
                         self.text = ""
                         self.isPresented = true
                     }, imageName: "plus", color: Color.purple)
+                            CustomAlert(title: "Enter WOEID City", isShown: $isPresented, text: $text) { woeid in
+                                print("New woeid: \(woeid)")
+                                weatherVM.addNewCity(woeid: woeid)
+                            }
                         }
                     }.accentColor(Color(.label))
                         .onAppear { UITableView.appearance().backgroundColor = UIColor.clear}
-                    CustomAlert(title: "Enter WOEID City", isShown: $isPresented, text: $text) { woeid in
-                        print("New woeid: \(woeid)")
-                        weatherVM.addNewCity(woeid: woeid)
-                    }
+                    .navigationViewStyle(.stack)
                 }
             } else {
                 ProgressView() //Loading fetch data
