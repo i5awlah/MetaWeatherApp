@@ -26,6 +26,8 @@
 		905C0CC5280E039E002FA4ED /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CC4280E039E002FA4ED /* WeatherView.swift */; };
 		905C0CC7280E0448002FA4ED /* TemperatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CC6280E0448002FA4ED /* TemperatureView.swift */; };
 		905C0CC9280E052D002FA4ED /* WeatherDetailStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CC8280E052D002FA4ED /* WeatherDetailStack.swift */; };
+		905C0CCB280E3506002FA4ED /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CCA280E3506002FA4ED /* FloatingActionButton.swift */; };
+		905C0CCD280E3CF0002FA4ED /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CCC280E3CF0002FA4ED /* CustomAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		905C0CC4280E039E002FA4ED /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		905C0CC6280E0448002FA4ED /* TemperatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureView.swift; sourceTree = "<group>"; };
 		905C0CC8280E052D002FA4ED /* WeatherDetailStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailStack.swift; sourceTree = "<group>"; };
+		905C0CCA280E3506002FA4ED /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
+		905C0CCC280E3CF0002FA4ED /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				905C0CB2280DF87C002FA4ED /* BackgroundView.swift */,
+				905C0CCA280E3506002FA4ED /* FloatingActionButton.swift */,
+				905C0CCC280E3CF0002FA4ED /* CustomAlert.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -257,8 +263,10 @@
 				905C0CAA280D18D2002FA4ED /* ConsolidatedWeather.swift in Sources */,
 				905C0C93280D1620002FA4ED /* HomeView.swift in Sources */,
 				905C0CC7280E0448002FA4ED /* TemperatureView.swift in Sources */,
+				905C0CCD280E3CF0002FA4ED /* CustomAlert.swift in Sources */,
 				905C0CC5280E039E002FA4ED /* WeatherView.swift in Sources */,
 				905C0CAD280DAB1D002FA4ED /* WeatherViewModel.swift in Sources */,
+				905C0CCB280E3506002FA4ED /* FloatingActionButton.swift in Sources */,
 				905C0CA3280D184D002FA4ED /* APICallManager.swift in Sources */,
 				905C0CBE280E004D002FA4ED /* DayListView.swift in Sources */,
 				905C0C91280D1620002FA4ED /* MetaWeatherAppApp.swift in Sources */,
