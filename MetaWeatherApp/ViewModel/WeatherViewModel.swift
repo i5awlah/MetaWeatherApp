@@ -9,8 +9,21 @@ class WeatherViewModel : ObservableObject {
     
     
     func getAllWeather() {
-        for city in cities {
-            getWeather(for: city)
+        NetworkManager.checkConnection { [self] isConnected in
+            if isConnected {
+                // fetch from API
+                for city in self.cities {
+                    self.getWeather(for: city)
+                }
+            } else {
+                // ftech from core data
+                if let weatherFromCD = PersistenceController.shared.fetch() {
+                    allWeathers = weatherFromCD
+                    DispatchQueue.main.async {
+                        isVisible = true
+                    }
+                }
+            }
         }
     }
     
@@ -20,6 +33,8 @@ class WeatherViewModel : ObservableObject {
             onSuccess: {(response) in
                 self.allWeathers.append(response)
                 print("response: \(response)")
+                // updated in core data
+                PersistenceController.shared.updateCoreData(weather: response)
                 if (self.cities.count == self.allWeathers.count) {
                 self.isVisible = true
                 }

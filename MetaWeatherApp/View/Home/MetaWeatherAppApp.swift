@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct MetaWeatherAppApp: App {
+    @State private var persistenceController = PersistenceController.shared
     var body: some Scene {
         WindowGroup {
             HomeView(weatherVM: WeatherViewModel())
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

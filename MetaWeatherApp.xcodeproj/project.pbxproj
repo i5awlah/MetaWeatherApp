@@ -30,6 +30,9 @@
 		905C0CCD280E3CF0002FA4ED /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CCC280E3CF0002FA4ED /* CustomAlert.swift */; };
 		905C0CD0280EF881002FA4ED /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CCF280EF881002FA4ED /* DateFormat.swift */; };
 		905C0CD4280EFDEE002FA4ED /* TemperatureConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CD3280EFDEE002FA4ED /* TemperatureConverter.swift */; };
+		905C0CE4280F8E2A002FA4ED /* MeatWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CE2280F8E2A002FA4ED /* MeatWeather.xcdatamodeld */; };
+		905C0CE6280F8F90002FA4ED /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CE5280F8F90002FA4ED /* PersistenceController.swift */; };
+		905C0CEA280FC0D3002FA4ED /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905C0CE9280FC0D3002FA4ED /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		905C0CCC280E3CF0002FA4ED /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		905C0CCF280EF881002FA4ED /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
 		905C0CD3280EFDEE002FA4ED /* TemperatureConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConverter.swift; sourceTree = "<group>"; };
+		905C0CE3280F8E2A002FA4ED /* MeatWeather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeatWeather.xcdatamodel; sourceTree = "<group>"; };
+		905C0CE5280F8F90002FA4ED /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		905C0CE9280FC0D3002FA4ED /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 				905C0CAE280DAD9B002FA4ED /* View */,
 				905C0C94280D1622002FA4ED /* Assets.xcassets */,
 				905C0C96280D1622002FA4ED /* Preview Content */,
+				905C0CE2280F8E2A002FA4ED /* MeatWeather.xcdatamodeld */,
 			);
 			path = MetaWeatherApp;
 			sourceTree = "<group>";
@@ -113,6 +120,7 @@
 			children = (
 				905C0CA2280D184D002FA4ED /* APICallManager.swift */,
 				905C0CA4280D187C002FA4ED /* WeatherService.swift */,
+				905C0CE9280FC0D3002FA4ED /* NetworkManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -191,6 +199,7 @@
 			children = (
 				905C0CCF280EF881002FA4ED /* DateFormat.swift */,
 				905C0CD3280EFDEE002FA4ED /* TemperatureConverter.swift */,
+				905C0CE5280F8F90002FA4ED /* PersistenceController.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -272,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				905C0CB3280DF87C002FA4ED /* BackgroundView.swift in Sources */,
+				905C0CE4280F8E2A002FA4ED /* MeatWeather.xcdatamodeld in Sources */,
 				905C0CA5280D187C002FA4ED /* WeatherService.swift in Sources */,
 				905C0CB9280DFA3E002FA4ED /* CityCell.swift in Sources */,
 				905C0CAA280D18D2002FA4ED /* ConsolidatedWeather.swift in Sources */,
@@ -282,9 +292,11 @@
 				905C0CC5280E039E002FA4ED /* WeatherView.swift in Sources */,
 				905C0CAD280DAB1D002FA4ED /* WeatherViewModel.swift in Sources */,
 				905C0CCB280E3506002FA4ED /* FloatingActionButton.swift in Sources */,
+				905C0CEA280FC0D3002FA4ED /* NetworkManager.swift in Sources */,
 				905C0CA3280D184D002FA4ED /* APICallManager.swift in Sources */,
 				905C0CBE280E004D002FA4ED /* DayListView.swift in Sources */,
 				905C0C91280D1620002FA4ED /* MetaWeatherAppApp.swift in Sources */,
+				905C0CE6280F8F90002FA4ED /* PersistenceController.swift in Sources */,
 				905C0CB1280DEF9B002FA4ED /* CityListView.swift in Sources */,
 				905C0CD4280EFDEE002FA4ED /* TemperatureConverter.swift in Sources */,
 				905C0CC9280E052D002FA4ED /* WeatherDetailStack.swift in Sources */,
@@ -510,6 +522,19 @@
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		905C0CE2280F8E2A002FA4ED /* MeatWeather.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				905C0CE3280F8E2A002FA4ED /* MeatWeather.xcdatamodel */,
+			);
+			currentVersion = 905C0CE3280F8E2A002FA4ED /* MeatWeather.xcdatamodel */;
+			path = MeatWeather.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 905C0C85280D161F002FA4ED /* Project object */;
 }
