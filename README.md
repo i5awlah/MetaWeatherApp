@@ -8,11 +8,3 @@ The app incorporates:
 - AlamoFire
 - Error Handling
 
-
-## Custom Features
-
-Additional features were added to the original functionality of the app, including:
-
-- Custom, dynamic UI using SwiftUI
-- Expanded CurrentWeather model including apparent temperature and wind speed
-- Included 5-day forecast
